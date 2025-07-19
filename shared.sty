@@ -1,0 +1,47 @@
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{tabularray}
+\UseTblrLibrary{varwidth}
+\usepackage[skins]{tcolorbox}
+\usepackage{graphicx}
+\usepackage{xcolor}
+
+\pagenumbering{gobble}
+\DefTblrTemplate{contfoot-text}{default}{}
+\DefTblrTemplate{conthead-text}{default}{}
+\DefTblrTemplate{caption}{default}{}
+\DefTblrTemplate{conthead}{default}{}
+\DefTblrTemplate{capcont}{default}{}
+
+\newtcbox{\fungicid}{enhanced, on line, frame hidden,
+left=3pt, right=3pt, top=0pt, bottom=0pt, 
+enlarge top by=2pt, enlarge bottom by=2pt,
+colback=white, coltitle=blue, coltext=blue,
+borderline={0.2mm}{0mm}{blue, solid, double}, 
+detach title,before upper={\tcbtitle\quad},title={F}}
+
+\newtcbox{\herbicid}{enhanced, on line, frame hidden,
+left=3pt, right=3pt, top=0pt, bottom=0pt, 
+enlarge top by=2pt, enlarge bottom by=2pt,
+colback=white, coltitle=green, coltext=green,
+borderline={0.2mm}{0mm}{green, dashed, double}, 
+detach title,before upper={\tcbtitle\quad},title={F}}
+
+\newtcbox{\insekticid}{enhanced, on line, frame hidden,
+left=3pt, right=3pt, top=0pt, bottom=0pt, 
+enlarge top by=2pt, enlarge bottom by=2pt,
+colback=white, coltitle=red, coltext=red,
+borderline={0.2mm}{0mm}{red, dash dot dot, double}, 
+detach title,before upper={\tcbtitle\quad},title={I}}
+
+\newtcbox{\prihrana}{enhanced, on line, frame hidden,
+left=3pt, right=3pt, top=0pt, bottom=0pt, 
+enlarge top by=2pt, enlarge bottom by=2pt,
+colback=white, coltitle=violet, coltext=violet,
+borderline={0.2mm}{0mm}{violet, dotted, double}, 
+detach title,before upper={\tcbtitle\quad},title={P}}
+
+\renewcommand{\rmdefault}{phv}
+\renewcommand{\sfdefault}{phv}
+\usepackage[a4paper,left=1.5cm,right=1.5cm,top=1.5cm,bottom=1.5cm]{geometry}
+

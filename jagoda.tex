@@ -1,18 +1,5 @@
 \documentclass[10pt,a4paper,oneside,landscape]{article}
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage{tabularray}
-\UseTblrLibrary{varwidth}
-\usepackage{graphicx}
-\usepackage{xcolor}
-\renewcommand{\rmdefault}{phv}
-\renewcommand{\sfdefault}{phv}
-\usepackage[a4paper,left=1.5cm,right=1.5cm,top=1.5cm,bottom=1.5cm]{geometry}
-\DefTblrTemplate{contfoot-text}{default}{}
-\DefTblrTemplate{conthead-text}{default}{}
-\DefTblrTemplate{caption}{default}{}
-\DefTblrTemplate{conthead}{default}{}
-\DefTblrTemplate{capcont}{default}{}
+\usepackage{shared}
 
 \begin{document}
 \huge{Jagoda}\normalsize\hfill *** Potrosnja vode: 200l/ha *** 2\% = 20ml/l *** 1l/ha = 5ml/l *** 1kg/ha = 5g/l ***
@@ -27,149 +14,149 @@
   Vreme primene & Namena & Preparat & Doza & Doza (l) & Karenca & Primenjeno \\
   \SetCell[r=3]{}Početak vegetacije
   & Prihrana
-  & NPK Solugal Start NPK 11-40-11+ME
+  & \prihrana{NPK Solugal Start NPK 11-40-11+ME}
   & 20 - 30 kg/ha
   & 100 - 150 g/l
   & -
   & \\*
   & Plamenjača (trulež) korena
-  & Legat SP**
+  & \fungicid{Legat SP**}
   & 0,25\%
   & 2.5 ml
   & 14
   & \\*
   & {Siva pegavost lista\\~\\~\\Štetni insekti\\~}
-  & {Metod 480 SC\\+\\Kozak\\ili\\Polux}
+  & {\fungicid{Metod 480 SC}\\+\\\insekticid{Kozak}\\ili\\\insekticid{Polux}}
   & {2 - 3 l/ha\\~\\0,02\% - 0,03\%\\~\\0,03\% - 0,05\%}
   & {10 - 15 ml\\~\\0,2 - 0.3 ml\\~\\0,3 - 0,5 ml}
   & {21\\~\\28\\~\\3}
   & \\
   Početak listanja
   & Prihrana
-  & Activeg Vegetative
+  & \prihrana{Activeg Vegetative}
   & 3 l/ha
   & 15 ml
   & -
   & \\
   Intenzivni porast
   & {~\\Siva pegavost lista\\~\\Štetni insekti\\~}
-  & {Metod 480 SC\\+\\Akord\\+\\Tonus}
+  & {\fungicid{Metod 480 SC}\\+\\\fungicid{Akord}\\+\\\insekticid{Tonus}}
   & {2 - 3 l/h\\~\\0,75 l/ha\\~\\0,3 l/ha}
   & {10 - 15 ml\\~\\3,75 ml\\~\\1.5 ml}
   & {21\\~\\21\\~\\14}
   & \\
   Do početka cvetanja
   & Prihrana
-  & {Foligal Feed Bor 150\\+\\Foligal Feed Cink 700}
+  & {\prihrana{Foligal Feed Bor 150}\\+\\\prihrana{Foligal Feed Cink 700}}
   & {1 l/ha\\~\\1 l/ha}
   & {5 ml\\~\\5 ml}
   & {-\\~\\-}
   & \\
   \SetCell[r=2]{}Vidljivi zatvoreni cvetni pupoljci
   & {Siva pegavost lista\\~\\Siva trulež}
-  & {Akord\\+\\Pehar}
+  & {\fungicid{Akord}\\+\\\fungicid{Pehar}}
   & {0,75 l/ha\\~\\0,2\%}
   & {3,75 ml\\~\\2 ml}
   & {21\\~\\14}
   & \\*
   & {Pepelnica\\Štetni insekti}
-  & {~\\Limocide\\~}
+  & {~\\\insekticid{Limocide}\\~}
   & {~\\3 - 4 l/h\\~}
   & {~\\15 - 20 ml\\~}
   & {~\\1\\~}
   & \\
   Tokom cvetanja i formiranja plodova 
   & Prihrana
-  & {Activeg Gold\\+\\Fitopin}
+  & {\prihrana{Activeg Gold}\\+\\\prihrana{Fitopin}}
   & {2 l/ha\\~\\0.1 l/ha}
   & {10 ml\\~\\0.5 ml}
   & {-\\~\\-}
   & \\
+  \pagebreak
+  \SetRow{gray9}Vreme primene & Namena & Preparat & Doza & Doza (l) & Karenca & Primenjeno \\
   Puno cvetanje
   & {Siva pegavost lista\\~\\Siva trulež}
-  & {Promesa\\+\\Pehar}
+  & {\fungicid{Promesa}\\+\\\fungicid{Pehar}}
   & {0,75 l/ha\\~\\0,2\%}
   & {3,75 ml\\~\\2 ml}
   & {10\\~\\14}
   & \\
   Precvetavanje
   & {Siva pegavost lista\\~\\Siva trulež\\~\\Cvetojed}
-  & {Promesa\\+\\Flux\\+\\Tonus}
+  & {\fungicid{Promesa}\\+\\\fungicid{Flux}\\+\\\insekticid{Tonus}}
   & {0,75 l/ha\\~\\1,5 - 2 l/ha\\~\\0,3 kg/ha}
   & {3,75 ml\\~\\7,5 - 10 ml\\~\\1.5 g}
   & {10\\~\\7\\~\\14}
   & \\
-  \pagebreak
-  \SetRow{gray9}Vreme primene & Namena & Preparat & Doza & Doza (l) & Karenca & Primenjeno \\
   Zametanje plodova
   & Prihrana
-  & {Activeg Gold\\+\\Fertigal CaB Organo}
+  & {\prihrana{Activeg Gold}\\+\\\prihrana{Fertigal CaB Organo}}
   & {1 l/ha\\~\\1 l/ha}
   & {5 ml\\~\\5 ml}
   & {-\\~\\-}
   & \\
   \SetCell[r=5]{}Rast plodova
   & \SetCell[r=2]{}{Siva trulež\\~\\Štetni insekti}
-  & {Libreto\\+\\preparat na bazi a.m. spinosad}
+  & {\fungicid{Libreto}\\+\\\insekticid{preparat na bazi a.m. spinosad}}
   & {1 - 1,5 l/ha\\~\\0,2 - 0,4 l/ha}
   & {5 - 7.5 ml\\~\\1 - 2 ml}
   & {3\\~\\-}
   & \\*
   & 
-  & Limocide
+  & \insekticid{Limocide}
   & 3 - 4 l/ha
   & 15 - 20 ml
   & 1
   & \\*
   & \SetCell[r=3]{}Prihrana
-  & Fertigal CaB Organo
+  & \prihrana{Fertigal CaB Organo}
   & 2 l/ha
   & 10 ml
   & -
   & \\*
   & 
-  & Foligal Feed Man 500
+  & \prihrana{Foligal Feed Man 500}
   & 1 l/ha
   & 5 ml
   & -
   & \\*
   & 
-  & Fertigal Silika
+  & \prihrana{Fertigal Silika}
   & 1 - 2 l/ha
   & 5 - 10 ml
   & -
   & \\
   7 dana pred berbu
   & {Siva trulež\\~\\Štetni insekti}
-  & {Flux\\+\\Polux}
+  & {\fungicid{Flux}\\+\\\insekticid{Polux}}
   & {1,5 - 2 l/ha\\~\\0,03\% - 0,05\%}
   & {7,5 - 10 ml\\~\\0,3 - 0,5 ml}
   & {7\\~\\3}
   & \\
   3 dana pred berbu
   & Siva trulež
-  & Libreto
+  & \fungicid{Libreto}
   & 1 - 1,5 l/ha
   & 5 - 7,5 ml
   & 3
   & \\
   Izmedju berbi
-  & {Pepelnica\\~\\Štetni insekti}
-  & Limocide
+  & {Pepelnica\\Štetni insekti}
+  & \insekticid{Limocide}
   & 3 - 4 l/ha
   & 15 - 20 ml
   & 1
   & \\
   Posle berbe
   & Siva pegavost lista
-  & Metod 480 SC
+  & \fungicid{Metod 480 SC}
   & 2 - 3 l/ha
   & 10 - 15 ml
   & 21
   & \\
   Nakon sadnje
   & Plamenjača (trulež) korena
-  & Legat SP**
+  & \fungicid{Legat SP**}
   & 0,25\%
   & 2,5 ml
   & 14
